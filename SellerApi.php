@@ -43,7 +43,7 @@ class SellerApi
 	 * Get all your products
 	 */
 	public function getProducts($options) {
-		$url = self::$api_url . 'seller/threads';
+		$url = self::$api_url . 'seller/products';
 		$url = self::_handleOptions($url, $options);
 		return self::_apiCall($url, false);
 	}
